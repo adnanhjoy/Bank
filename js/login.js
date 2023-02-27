@@ -5,9 +5,9 @@ document.getElementById('login-button').addEventListener('click', function () {
     password = userPassword.value;
 
     if (email === 'adnan@gmail.com' && password === 'secret') {
-        console.log('Valid user')
+        window.location.href = 'bank.html'
     } else {
-        console.log('Invalid User')
+        alert('Invalid Username & Password')
     }
     userEmail.value = ''
     userPassword.value = ''
